@@ -325,7 +325,7 @@ border:1px solid rgba(0,0,0,0.3);
 
 .main-heading
 {
-   background: url(<video>/images/Main.mp4) center center no-repeat;
+   background: url(<video>/images/Main.webm) center center no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
 	color: #cfcfcf;

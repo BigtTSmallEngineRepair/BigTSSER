@@ -237,7 +237,7 @@ VERSION : 1.1
  
  <!-- [PORTFOLIO]
  ============================================================================================================================-->
- <section class="portfolio white-background black" id="portfolio">
+<section class="portfolio white-background black" id="portfolio">
     <div class="container">
         <div class="row">
             <div class="sectionTitle text-center col-md-12">
@@ -248,47 +248,46 @@ VERSION : 1.1
             </div>
             <div class="gap"></div>
 
-            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Item 1 -->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="#">
-                                            <div class="hover-text">
-                                                <h4>Price is</h4>
-                                                <small>6189.99</small>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <img src="images/portfolio/01.jpg" class="img-responsive" alt="...">
-                                        </a>
-                                    </div>
+            <div class="portfolio-scroll">
+                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Price is</h4>
+                                    <small>6189.99</small>
+                                    <div class="clearfix"></div>
                                 </div>
-                            </div>
-                            <!-- Agrega más imágenes aquí para el primer slide -->
-                        </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <!-- Agrega las otras imágenes aquí para el segundo slide -->
+                                <img src="images/portfolio/01.jpg" class="img-responsive" alt="...">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
+                <!-- Repite para las demás imágenes -->
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    .portfolio-scroll {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* para scroll suave en móviles */
+        gap: 10px;
+    }
+
+    .portfolio-scroll .portfolio-item {
+        flex: 0 0 auto;
+    }
+
+    /* Evita que las imágenes se deformen */
+    .portfolio-scroll img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
 
  <!-- [PORTFOLIO]
  ============================================================================================================================--> 
